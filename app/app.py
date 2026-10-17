@@ -23,11 +23,9 @@ def home():
     </html>
     """
 
-
 @app.route("/healthz")
 def healthz():
     return jsonify(status="ok")
-
 
 if __name__ == "__main__":
     port = int(os.getenv("PORT", "8080"))
